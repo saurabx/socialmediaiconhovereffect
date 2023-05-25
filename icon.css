@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111827;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 45px;
+}
+.icon li a{
+    font-size: 45px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: antiquewhite;
+    position: relative;
+    transition: 0.5s ease;
+    
+}
+.icon li a:hover{
+    color: blueviolet;
+    font-size: 35px;
+    box-shadow: 0 0 40px #0de467;
+}
+
+@media only screen and (max-width: 450px) {
+    ul.icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 86px;
+        grid-column-gap: 52px;
+        grid-row-gap: 9px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .icon li a{
+     
+        margin-left: 0px;
+    }
+
+   
+}
